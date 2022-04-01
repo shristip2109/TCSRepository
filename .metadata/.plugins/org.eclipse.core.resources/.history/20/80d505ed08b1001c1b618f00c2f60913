@@ -1,0 +1,69 @@
+/**
+ * 
+ */
+package com.tcs.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.stereotype.Repository;
+import com.tcs.model.Result;
+/**
+ * @author springuser10
+ *
+ */
+@Repository
+public class ProfessorDao {
+	
+	//dummy database for Student Result information.
+	
+			private static List<Result> result;
+			{ 
+				result = new ArrayList<Result>();
+				result.add(new Result(02, "abc", 05, "Java", "A"));
+				result.add(new Result(03, "abc", 05, "Java", "a1"));
+				result.add(new Result(04, "abc", 05, "Java", "a2"));
+				
+			}
+			
+			
+			public List<Result> list() {
+				return result;
+			}
+			
+			//Get the Result details with id 
+
+					public Result get(Long id) {
+
+						for (Result res : result) {
+							if (res.getId()==(id))
+									
+							
+								return res;
+							
+						}
+						return null;
+					}
+					
+					//Create Result
+					public Result create(Result r) {
+						r.setId(System.currentTimeMillis());
+						result.add(r);
+						return r;
+					}
+					
+					//Update Result
+					public Result update(Long id, Result r) {
+
+						for (Result c : result) {
+							if (c.getId().equals(id)) {
+								r.setId(c.getId());
+								result.remove(c);
+								result.add(r);
+								return r;
+							}
+						}
+
+						return null;
+					
+					}
+}

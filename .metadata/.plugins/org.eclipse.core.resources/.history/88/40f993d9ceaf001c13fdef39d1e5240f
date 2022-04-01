@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.tcs.dao;
+
+import java.util.List;
+
+import com.tcs.model.Course;
+import com.tcs.model.Professor;
+
+
+/**
+ * @author springuser10
+ *
+ */
+public interface ProfessorDao {
+	
+	public boolean professorLogin(int id, String pwd);
+	public List viewEnrolledStudents(int cid);
+	public boolean addGrades(int sid,int cid, String grade);
+
+
+
+}

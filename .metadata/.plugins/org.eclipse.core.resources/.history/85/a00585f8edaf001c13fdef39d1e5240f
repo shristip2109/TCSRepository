@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.tcs.repository;
+
+/**
+ * @author springuser10
+ *
+ */
+public class PersonRepository {
+
+}

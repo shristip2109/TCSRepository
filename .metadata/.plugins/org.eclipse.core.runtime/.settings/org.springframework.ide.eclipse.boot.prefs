@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jdbc=5
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-rest=7
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=7
@@ -16,6 +17,27 @@ org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=11
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=TCS-CRS-C-SPRING-JDBCTEMPLATE
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.tcs.application
+=======
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-eureka-server=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-starter=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jdbc=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-rest=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.jersey=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mysql=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.restdocs=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web-services=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=TCS-CRS-EUREKA-SERVER
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.6.5.RELEASE
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=com.cloud
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=11
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=TCS-CRS-EUREKA-SERVER
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=com.cloud.server
+>>>>>>> ddbf3d65e177de5dd8b9f1cb5e030c0624738155
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=war
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.version=0.0.1-SNAPSHOT

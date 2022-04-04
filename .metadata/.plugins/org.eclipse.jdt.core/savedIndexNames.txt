@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 INDEX VERSION 1.131+C:\Users\shris\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
 413088112.index
 1826609092.index
@@ -126,6 +127,8 @@ INDEX VERSION 1.131+C:\Users\shris\Documents\workspace-spring-tool-suite-4-4.14.
 3700439666.index
 4052080547.index
 =======
+=======
+>>>>>>> ddbf3d65e177de5dd8b9f1cb5e030c0624738155
 INDEX VERSION 1.131+C:\Users\springuser10\Documents\workspace-sts-3.9.12.RELEASE\.metadata\.plugins\org.eclipse.jdt.core
 344887773.index
 3891818576.index
@@ -264,4 +267,7 @@ INDEX VERSION 1.131+C:\Users\springuser10\Documents\workspace-sts-3.9.12.RELEASE
 386164931.index
 285671031.index
 3210184352.index
+<<<<<<< HEAD
+>>>>>>> ddbf3d65e177de5dd8b9f1cb5e030c0624738155
+=======
 >>>>>>> ddbf3d65e177de5dd8b9f1cb5e030c0624738155

@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+package com.tcs.restcontroller;
+
+import java.util.List;
+
+import javax.ws.rs.core.MediaType;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tcs.dao.EmployeeDao;
+/**
+ * @author springuser10
+ *
+ */
+@RestController
+public class EmployeeController {
+	@Autowired //The meaning of @Autowired is put the dependency injection at the Dao layer
+	private EmployeeDao employeeDAO;
+
+	
+	@RequestMapping(produces = MediaType.APPLICATION_JSON, 
+		    method = RequestMethod.GET,
+		    value = "/employee")
+		@ResponseBody
+		public List getCustomers() {
+		
+
+		
+		return employeeDAO.list();
+	}
+
+}

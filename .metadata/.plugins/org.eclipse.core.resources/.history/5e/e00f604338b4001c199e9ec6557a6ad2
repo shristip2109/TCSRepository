@@ -1,0 +1,14 @@
+package com.tcs.dao;
+
+import com.tcs.model.CourseEnrolled;
+
+public interface ProfessorDao {
+	
+	/**
+	 * This is the method to be used to initialize database resources ie.
+	 * connection.
+	 */
+
+	public CourseEnrolled getStudent(Integer courseid);
+	
+}

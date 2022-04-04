@@ -1,0 +1,74 @@
+/**
+ * 
+ */
+package com.tcs.entity;
+
+/**
+ * @author springuser10
+ *
+ */
+public class Person {
+	public class Professor {
+		
+		private Long pid;
+		private String professorName;
+		private String courseName;
+		private int courseId;
+
+		
+		public Professor(Long pid,String professorName, String courseName, int courseId, String department,
+				String credential) {
+			super();
+			this.professorName = professorName;
+			this.courseName = courseName;
+			this.courseId = courseId;
+			this.pid = pid;
+		}
+		
+		public Professor() {
+		}
+
+		
+		public Long getPid() {
+			return pid;
+		}
+
+		public void setPid(Long pid) {
+			this.pid = pid;
+		}
+
+		
+		public String getProfessorName() {
+			return professorName;
+		}
+
+		
+		public void setProfessorName(String professorName) {
+			this.professorName = professorName;
+		}
+
+		public String getCourseName() {
+			return courseName;
+		}
+
+		
+		public void setCourseName(String courseName) {
+			this.courseName = courseName;
+		}
+
+		
+		
+		public int getCourseId() {
+			return courseId;
+		}
+
+		
+		public void setCourseId(int courseId) {
+			this.courseId = courseId;
+		}
+
+		
+
+	}
+
+}

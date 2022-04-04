@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.tcs.crs.model.Student&apos; to &apos;professor&apos;&#x0D;&#x0A;- Original project: &apos;TCS-CRS-C-SPRING&apos;&#x0D;&#x0A;- Original element: &apos;com.tcs.crs.model.Student&apos;&#x0D;&#x0A;- Renamed element: &apos;com.tcs.crs.model.professor&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Student&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.tcs.crs.model{Student.java[Student" matchStrategy="1" name="professor" qualified="false" references="true" similarDeclarations="false" stamp="1648572869944" textual="false" version="1.0"/>
+</session>

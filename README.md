@@ -1,1 +1,1 @@
-Course Registeration System
+Course Registration System

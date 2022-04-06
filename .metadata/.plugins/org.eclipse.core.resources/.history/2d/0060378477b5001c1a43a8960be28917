@@ -1,0 +1,42 @@
+package com.tcs.dao;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.tcs.model.User;
+
+
+@Repository
+public class UserDaoImpl implements UserDao {
+
+Logger logger = LoggerFactory.getLogger(UserDaoImpl.class);
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplateObject;
+
+	@Override
+	public void addUser(User user) {
+	
+		String adduser="insert into user (id,userid,password,roleid,timestamp) values (?,?,?,?,?)";
+		   jdbcTemplateObject.update(adduser,user.getId(),user.getUserid(),user.getPassword(),user.getRoleid(),user.getTimestamp());
+		return courseenrolled;
+	}
+
+	@Override
+	public void deleteUser(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List getUser(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	} 
+
+}

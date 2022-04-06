@@ -1,0 +1,15 @@
+package com.tcs.dao;
+
+import com.tcs.model.CourseEnrolled;
+import com.tcs.model.Payment;
+import com.tcs.model.Student;
+
+public interface StudentDao {
+	
+	public CourseEnrolled addcourseByStudent(CourseEnrolled courseenrolled);
+	public  CourseEnrolled deleteCourseByStudent(Integer courseenroll);
+	public Student studentRegistration(Student student);
+	public List<Map<String, Object>> viewGrade(Integer id);
+	public Payment addPayment(Payment payment);
+
+}

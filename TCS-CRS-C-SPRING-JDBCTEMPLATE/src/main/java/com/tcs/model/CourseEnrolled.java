@@ -1,0 +1,39 @@
+package com.tcs.model;
+
+public class CourseEnrolled {
+
+	private Integer courseenroll;
+	private Integer courseid;
+	private Integer studentid;
+	private Integer pid;
+	public Integer getCourseenroll() {
+		return courseenroll;
+	}
+	public void setCourseenroll(Integer courseenroll) {
+		this.courseenroll = courseenroll;
+	}
+	public Integer getCourseid() {
+		return courseid;
+	}
+	public void setCourseid(Integer courseid) {
+		this.courseid = courseid;
+	}
+	public Integer getStudentid() {
+		return studentid;
+	}
+	public void setStudentid(Integer studentid) {
+		this.studentid = studentid;
+	}
+	public Integer getPid() {
+		return pid;
+	}
+	public void setPid(Integer pid) {
+		this.pid = pid;
+	}
+	
+	@Override
+	public String toString() {
+		return "CourseEnrolled [courseenroll=" + courseenroll + ", courseid=" + courseid + ", studentid="
+				+ studentid +", pid"+ pid+ "]";
+	}
+}

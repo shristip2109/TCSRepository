@@ -1,0 +1,44 @@
+package com.tcs.dao;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.tcs.model.CourseEnrolled;
+import com.tcs.model.Payment;
+import com.tcs.model.Student;
+
+public class StudentDaoImpl implements StudentDao {
+	
+Logger logger = LoggerFactory.getLogger(ProfessorDaoImpl.class);
+	
+	@Autowired
+	private JdbcTemplate jdbcTemplateObject; 
+
+	
+	public CourseEnrolled addcourseByStudent(CourseEnrolled courseenrolled) {
+		String addcourse="insert into courseenrolled (courseenroll,courseid,studentid) values (?,?,?)";
+		   jdbcTemplateObject.update(addcourse,courseenrolled.getCourseenroll(),courseenrolled.getCourseid(),courseenrolled.getStudentid());
+		return courseenrolled;
+	}
+
+	@Override
+	public CourseEnrolled deleteCourseByStudent(Integer courseenroll) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Student studentRegistration(Student student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Payment addPayment(Payment payment) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.tcs.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.tcs.entity.Payment;
+import com.tcs.entity.Student;
+import com.tcs.repository.PaymentRepository;
+import com.tcs.repository.StudentRepository;
+
+
+
+public class PaymentService {
+	
+	@Autowired
+	PaymentRepository<Payment>paymentRepository;
+	
+@Transactional
+	public boolean addStudent (Payment payment) {
+		return paymentRepository.save(payment) != null;	
+		}
+}

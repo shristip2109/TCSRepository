@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.tcs.Configuration;
+
+/**
+ * @author springuser10
+ *
+ */
+public class JDBCConfiguration {
+
+}

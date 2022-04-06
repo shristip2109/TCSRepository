@@ -14,7 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+<<<<<<< HEAD
 import com.tcs.dao.AdminDaoImpl;
+=======
+import com.tcs.dao.AdminDao;
+>>>>>>> 159755fc3641ee7c4b24fdf59f7236b0a139b4e7
 import com.tcs.model.Course;
 import com.tcs.model.Professor;
 //import com.tcs.model.ReportCard;
@@ -28,7 +32,11 @@ import com.tcs.model.Professor;
 public class AdminController {
 	
 	@Autowired //The meaning of @Autowired is put the dependency injection at the Dao layer
+<<<<<<< HEAD
 	private AdminDaoImpl admindao;
+=======
+	private AdminDao admindao;
+>>>>>>> 159755fc3641ee7c4b24fdf59f7236b0a139b4e7
 
 	//Using this method to get details of Professor
 	@RequestMapping(produces = MediaType.APPLICATION_JSON, 

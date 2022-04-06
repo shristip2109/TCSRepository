@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.tcs.dao;
+
+import java.util.List;
+
+import com.tcs.model.Course;
+import com.tcs.model.Professor;
+
+
+/**
+ * @author springuser10
+ *
+ */
+public interface ProfessorDao {
+	
+	public List<student> listStudent();
+
+	public Grades add(Grades grades);
+
+
+
+}

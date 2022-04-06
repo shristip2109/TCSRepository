@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.tcs.restcontroller;
+
+/**
+ * @author springuser10
+ *
+ */
+public class ProfessorController {
+
+}

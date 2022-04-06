@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.tcs.Dao;
+
+/**
+ * @author springuser10
+ *
+ */
+public class ProfessorDao {
+
+}

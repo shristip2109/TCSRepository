@@ -1,0 +1,85 @@
+/**
+ * 
+ */
+package com.tcs.dao;
+
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.tcs.mapper.ProfessorMapper;
+import com.tcs.model.Professor;
+
+/**
+ * @author springuser10
+ *
+ */
+@Repository
+public class ProfessorDaoImpl implements ProfessorDao{
+
+
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate){
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	/**
+	 * This method performs Professor Login Operation
+	 * @param USER_LOGIN is an SQL Constant 
+	 * 
+	 */
+	public boolean professorLogin(int id, String pwd) {
+		try{Integer max = jdbcTemplate.queryForObject(SQLConstants.USER_LOGIN,new Object[]{id,pwd},Integer.class);
+		return true;
+		}catch(Exception e) {
+			return false;
+		}
+	}
+
+	
+	public List viewEnrolledStudents(int cid) {
+		try {
+			Integer pid = jdbcTemplate.queryForObject(SQLConstants.PROFESSOR_ID,new Object[]{cid},Integer.class);
+			List<StudentGrades> list = null;
+			if(pid!=null) {
+				String sql = SQLConstants.EN_STUD_DTL;			 
+				list=new ArrayList<>();
+				List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql,new Object[] {cid});
+				for (Map row : rows) {
+					StudentGrades obj = new StudentGrades();
+					obj.setSname((String) row.get("SName"));
+					obj.setSid((int) row.get("SID"));
+					obj.setCname((String) row.get("CName")); 
+					obj.setGrade((String) row.get("Grade"));
+					list.add(obj);
+				}
+			}
+			return list;
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return null;
+	}
+
+	
+	public boolean addGrades(int sid,int cid, String grade) {
+		try {
+			Integer pid = jdbcTemplate.queryForObject(SQLConstants.PROFESSOR_ID,new Object[]{cid},Integer.class);
+			if(pid!=null) {
+				int y=jdbcTemplate.update(SQLConstants.ADD_GRADE,new Object[]{grade,sid,cid});
+				if(y>0) {
+					return true;}}
+		}catch(Exception e) {
+			return false;}
+		return false;
+	}
+
+}
+

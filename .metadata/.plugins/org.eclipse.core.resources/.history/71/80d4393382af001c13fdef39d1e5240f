@@ -1,0 +1,58 @@
+/**
+ * 
+ */
+package com.tcs.model;
+
+
+/**
+ * @author springuser21
+ *
+ */
+public class Professor {
+	
+	private Integer grades;
+	private String students;
+	
+	
+	
+	
+
+
+	public Integer getGrades() {
+		return grades;
+	}
+
+
+
+
+
+
+	public void setGrades(Integer grades) {
+		this.grades = grades;
+	}
+
+
+
+
+
+
+	public String getStudents() {
+		return students;
+	}
+
+
+
+
+
+
+	public void setStudents(String students) {
+		this.students = students;
+	}
+
+
+
+
+
+
+
+}
